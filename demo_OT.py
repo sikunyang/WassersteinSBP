@@ -14,7 +14,7 @@ colors=['k','b','g','r']
 n = 100
 x = np.arange(n,dtype = np.float64)
 
-p1 = 0.55 * ot.datasets.get_1D_gauss(n,20,8) + 0.45 * ot.datasets.get_1D_gauss(n,70,9)
+p1 = ot.datasets.get_1D_gauss(n,20,8)#0.55 * ot.datasets.get_1D_gauss(n,20,8) + 0.45 * ot.datasets.get_1D_gauss(n,70,9)
 p2 = 0.55 * ot.datasets.get_1D_gauss(n,35,9) + 0.45 * ot.datasets.get_1D_gauss(n,55,5)
 
 plt.plot(x,p1,'o-',color='blue')
